@@ -14,10 +14,10 @@
       <div id="search">
         <input placeholder="search" id="search-input" type="text" />
         <div>
-          <button class="filter">All</button>
-          <button class="filter">Tech</button>
-          <button class="filter">Clothing</button>
-          <button class="filter">Health</button>
+          <button class="filter selected" data-filter="all">All</button>
+          <button class="filter" data-filter="tech">Tech</button>
+          <button class="filter" data-filter="clothing">Clothing</button>
+          <button class="filter" data-filter="health">Health</button>
         </div>
         <div>
           <input type="number" placeholder="search price" />
@@ -25,7 +25,7 @@
         </div>
       </div>
       <div id="products">
-        <div class="product-item">
+        <div class="product-item" data-category="tech">
           <img src="./img/iphone.png" />
           <p>Apple iphone 14 pro</p>
           <span>$ 1499</span>
